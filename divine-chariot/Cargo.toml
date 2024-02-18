@@ -1,0 +1,25 @@
+[package]
+name = "divine-chariot"
+version = "0.1.0"
+edition = "2021"
+authors = ["Apollo"]
+
+build = "build.rs"
+
+[dependencies]
+bit-set = "*"
+bit-vec = "*"
+bson = "*"
+downcast-rs = "*"
+libc = "*"
+mopa = "*"
+query_interface = "*"
+serde = "*"
+serde_cbor = "*"
+serde_derive = "*"
+serde_json = "*"
+typename = "*"
+#bear-lib-terminal = "*"
+
+[dependencies.bear-lib-terminal]
+path = "../BearLibTerminal.rs"

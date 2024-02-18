@@ -1,0 +1,21 @@
+[package]
+name = "bear-lib-terminal"
+description = "BearLibTerminal FFI for Rust"
+documentation = "https://cdn.rawgit.com/nabijaczleweli/BearLibTerminal.rs/doc/bear_lib_terminal/index.html"
+repository = "https://github.com/nabijaczleweli/BearLibTerminal.rs"
+readme = "README.md"
+keywords = ["BearLibTerminal", "FFI", "TUI", "UI"]
+categories = ["external-ffi-bindings", "gui", "multimedia"]
+license = "MIT"
+# Remember to also update in appveyor.yml
+version = "2.0.0"
+authors = ["nabijaczleweli <nabijaczleweli@gmail.com>",
+           "Cat Plus Plus <piotrlegnica@piotrl.pl>",
+           "Ryan1729 <Ryan1729@gmail.com>",
+           "Apollo <apollo.hogan@gmail.com>"]
+exclude = ["*.enc"]
+
+#[dependencies]
+#bear-lib-terminal-sys = "1.2"
+[dependencies.bear-lib-terminal-sys]
+path = "../BearLibTerminal-sys.rs"
